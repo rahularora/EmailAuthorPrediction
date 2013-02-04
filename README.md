@@ -1,0 +1,4 @@
+EmailAuthorPrediction
+=====================
+
+For the task of prediction of author from emails, we used Unigram language model. We started out on the problem by finding out the features that would help model the solution. The features that looked important were: • N-grams of the email • Frequency of each N-gram • Out of Vocabulary words (Spelling mistakes) The combination of first two features describes how the particular author chooses his dictionary set for writing text. Therefore, this feature can be termed as the signature of the author as all writers tend to choose only words from some defined subset of the Vocabulary. Also, the out of vocabulary words, generally the spelling mistakes done by the author, depict the style of the writing text, and therefore, comes to be an important aspect of the solution. The solution, thus, comes to be finding the total probability of each Ngram to be written by the particular author in the email.
